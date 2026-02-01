@@ -1,5 +1,4 @@
 # Healthcare-Analysis
-Healthcare Data Analysis (SQL + Power BI)
 
 Project Overview
 
