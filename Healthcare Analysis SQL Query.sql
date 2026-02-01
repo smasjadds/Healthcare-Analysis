@@ -114,7 +114,7 @@ FROM Healthcare_analysis
 
 
 
---Percentage of abnormal test results oer medical condition.
+--Percentage of abnormal test results per medical condition.
 SELECT Medical_condition,
 COUNT(*) AS Total_Patients,
 SUM(CASE WHEN Test_results = 'Abnormal' THEN 1 ELSE 0 END) AS Abnormal_Count,
@@ -201,6 +201,7 @@ LAG(Total_Admission) over(order by Admission_year) as Previous_year_growth,
 / LAG(Total_Admission) over(order by Admission_year) AS YoY_growth_percentage
 from CTE
 ORDER BY Admission_year
+
 
 
 
